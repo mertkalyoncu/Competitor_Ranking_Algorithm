@@ -1,0 +1,50 @@
+.file_upload {
+  border: 1px black solid;
+  padding: 15px;
+  background-color: rgb(212, 209, 209);
+}
+
+.uploaderPart {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: absolute;
+}
+
+.printMessage {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+}
+
+.userManual {
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.sendButton {
+  background-color: black;
+  color: white;
+  border: red;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.sendButton:enabled:hover {
+  background-color: #3e8e41;
+}
+
+.fileBox {
+  background-color: rgb(92, 92, 92);
+  color: grey;
+  border: red;
+  opacity: 0.9;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+}

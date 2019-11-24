@@ -1,0 +1,20 @@
+Hello,
+
+Here are the steps to install
+
+1- Angular CLI and nodeJS should be installed. 
+
+	for angularCLI : from command prompt => npm install @angular/cli -g
+	for nodeJS : install from nodejs.org
+	
+2- I used SpringToolSuite for BE.
+3- going to the directory of  competitor-ranking-FE in command prompt, type => npm install  
+	after installation is completed, type=> ng serve
+4- For BE, maven update project and build.
+5- When both BE and FE is running, from browser go to  'localhost:/4200'
+
+
+The code is working without a problem on my computer so i wouldnt expect a problem but if you face a problem running the project, please let me know.
+
+Best Regards
+Mert Kalyoncu

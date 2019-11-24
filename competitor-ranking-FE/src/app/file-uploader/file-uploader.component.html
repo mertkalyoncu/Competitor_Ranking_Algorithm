@@ -1,0 +1,22 @@
+<div class="file_upload">
+    <p class="userManual">Please choose the file you want to upload</p>
+    <br><br>
+    <div class="uploaderPart">
+        <input class="fileBox" #fileUploader type="file" (change)="onChange($event.target.files)" name="myfile" accept=".doc,.txt"
+            nv-file-select uploader="{FileUploader}" multiple>
+        <button class="sendButton" [disabled]="sendButtonDisabled" (click)="clickButtonAction()"> Submit </button>
+    </div>
+    <div *ngIf="isDivVisible">
+        <br><br><br>
+        <h1 class="printMessage">{{printingMessage}}</h1>
+    </div>
+    <br><br>
+    <div *ngIf="isGridVisible">
+        <br>
+        <ag-grid-angular style="width: 610px; height: 200px;" class="ag-theme-balham" [pagination]="true"
+            [paginationPageSize]="4" [rowData]="rowData" [columnDefs]="columnDefs" [modules]="modules">
+        </ag-grid-angular>
+    </div>
+    <br><br><br>
+
+</div>

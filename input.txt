@@ -1,0 +1,11 @@
+Company_1 100
+Company_2 500
+Company_3 350
+Company_4 100
+Company_5 500
+Company_6 750
+Company_7 350
+
+
+  
+

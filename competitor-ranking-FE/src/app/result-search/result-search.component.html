@@ -1,0 +1,18 @@
+<div class="result-src">
+    <p class="userMessage">Please write competitor name to get its rank and score</p>
+    <br><br>
+    <input class="textBox" placeholder="type competitor name here!!" type="text"  (keyup)="keyup($event.target.value) ">
+    <input class="queryButton" type="submit" [disabled]="queryButtonDisabled" (click)="clickButtonAction()"
+        value="Submit">
+    <br><br>
+    <div *ngIf="isGridVisible">
+        <br><br><br>
+        <ag-grid-angular style="width: 610px; height: 90px;" class="ag-theme-balham" [rowData]="rowData"
+            [columnDefs]="columnDefs" [modules]="modules">
+        </ag-grid-angular>
+    </div>
+    <div *ngIf="isDivVisible">
+        <br><br><br>
+        <h1 class="errorMessage">{{printingMessage}}</h1>
+    </div>
+</div>
