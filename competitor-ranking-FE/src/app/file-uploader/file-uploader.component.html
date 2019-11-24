@@ -2,7 +2,7 @@
     <p class="userManual">Please choose the file you want to upload</p>
     <br><br>
     <div class="uploaderPart">
-        <input class="fileBox" #fileUploader type="file" (change)="onChange($event.target.files)" name="myfile" accept=".doc,.txt"
+        <input class="fileBox" #fileUploader type="file" (change)="onChange($event.target.files)" name="myfile" accept=".txt"
             nv-file-select uploader="{FileUploader}" multiple>
         <button class="sendButton" [disabled]="sendButtonDisabled" (click)="clickButtonAction()"> Submit </button>
     </div>
